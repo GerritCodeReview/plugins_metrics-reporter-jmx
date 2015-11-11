@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16feeae5_62f27293",
+        "filename": "BUCK",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-11-11T17:53:30Z",
+      "side": 1,
+      "message": "not needed?",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 1
+      },
+      "revId": "ab0ad88c918b0555ef279e3e3b9c7b76805f6fa2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "16feeae5_82f5fe7b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/GerritJmxReporter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-11-11T17:53:30Z",
+      "side": 1,
+      "message": "unnecessary wrap",
+      "revId": "ab0ad88c918b0555ef279e3e3b9c7b76805f6fa2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
