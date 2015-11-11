@@ -16,7 +16,7 @@ gerrit_plugin(
 # this is required for bucklets/tools/eclipse/project.py to work
 java_library(
   name = 'classpath',
-  deps = [':metrics__plugin'],
+  deps = [':metrics-reporter-jmx__plugin'],
 )
 
 
