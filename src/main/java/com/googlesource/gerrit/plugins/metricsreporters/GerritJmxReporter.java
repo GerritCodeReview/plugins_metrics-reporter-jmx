@@ -13,13 +13,12 @@
 // limitations under the License.
 package com.googlesource.gerrit.plugins.metricsreporters;
 
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.jmx.JmxReporter;
 import com.google.gerrit.extensions.annotations.Listen;
 import com.google.gerrit.extensions.events.LifecycleListener;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-
-import com.codahale.metrics.JmxReporter;
-import com.codahale.metrics.MetricRegistry;
 
 @Listen
 @Singleton
