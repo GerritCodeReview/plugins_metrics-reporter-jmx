@@ -3,6 +3,6 @@ load("//tools/bzl:maven_jar.bzl", "maven_jar")
 def external_plugin_deps():
     maven_jar(
         name = "metrics_jmx",
-        artifact = "io.dropwizard.metrics:metrics-jmx:4.0.3",
-        sha1 = "d49313634a606496433e34b733251ba9fdbb333f",
+        artifact = "io.dropwizard.metrics:metrics-jmx:4.0.5",
+        sha1 = "d7be4ddd7ba674ee8be1d23d883fb3ca68ee1d54",
     )
