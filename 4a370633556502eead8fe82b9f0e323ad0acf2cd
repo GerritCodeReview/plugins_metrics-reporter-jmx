@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9b375b1f_a317149c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2019-10-02T12:57:51Z",
+      "side": 1,
+      "message": "Configuration, rather? -Unless the goal being to leave it as is, i.e., using this plugin\u0027s main class for more explicit traces.",
+      "range": {
+        "startLine": 31,
+        "startChar": 60,
+        "endLine": 31,
+        "endChar": 77
+      },
+      "revId": "4a370633556502eead8fe82b9f0e323ad0acf2cd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "000267ae_f7800ae6",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2019-10-02T12:57:51Z",
+      "side": 1,
+      "message": "Extra blank line; would remove it.",
+      "revId": "4a370633556502eead8fe82b9f0e323ad0acf2cd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "61f1dd05_e72c3ded",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2019-10-02T12:57:51Z",
+      "side": 1,
+      "message": "Extra blank line.",
+      "revId": "4a370633556502eead8fe82b9f0e323ad0acf2cd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
