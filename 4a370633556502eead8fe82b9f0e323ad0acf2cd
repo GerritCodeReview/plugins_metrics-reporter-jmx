@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ec7092d6_aff7bbd7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1078567
+      },
+      "writtenOn": "2019-10-02T13:44:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9b375b1f_a317149c",
+      "range": {
+        "startLine": 31,
+        "startChar": 60,
+        "endLine": 31,
+        "endChar": 77
+      },
+      "revId": "4a370633556502eead8fe82b9f0e323ad0acf2cd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "000267ae_f7800ae6",
         "filename": "src/main/resources/Documentation/config.md",
         "patchSetId": 1
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "5e5e6d65_dc374d31",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1078567
+      },
+      "writtenOn": "2019-10-02T13:44:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "000267ae_f7800ae6",
+      "revId": "4a370633556502eead8fe82b9f0e323ad0acf2cd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "61f1dd05_e72c3ded",
         "filename": "src/main/resources/Documentation/config.md",
         "patchSetId": 1
@@ -56,6 +98,24 @@
       "revId": "4a370633556502eead8fe82b9f0e323ad0acf2cd",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f9ff6a9_f7ae1696",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1078567
+      },
+      "writtenOn": "2019-10-02T13:44:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "61f1dd05_e72c3ded",
+      "revId": "4a370633556502eead8fe82b9f0e323ad0acf2cd",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
