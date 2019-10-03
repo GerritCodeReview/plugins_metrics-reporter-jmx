@@ -96,6 +96,54 @@
     },
     {
       "key": {
+        "uuid": "7c9bc786_4e53f307",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1078567
+      },
+      "writtenOn": "2019-10-03T11:42:29Z",
+      "side": 1,
+      "message": "I made the variable final and in the constructor I use the .addAll() method instead of assigning a new HashSet. I hope it fits your requirements.",
+      "parentUuid": "79e7e416_44554b34",
+      "range": {
+        "startLine": 37,
+        "startChar": 2,
+        "endLine": 37,
+        "endChar": 9
+      },
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7692ca98_982665da",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1078567
+      },
+      "writtenOn": "2019-10-03T11:42:29Z",
+      "side": 1,
+      "message": "I kept this part, see my comment above.",
+      "parentUuid": "52b364f9_eba4f912",
+      "range": {
+        "startLine": 37,
+        "startChar": 30,
+        "endLine": 37,
+        "endChar": 49
+      },
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d3c80eb7_294c9a6c",
         "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
         "patchSetId": 2
@@ -107,6 +155,24 @@
       "writtenOn": "2019-10-03T10:45:45Z",
       "side": 1,
       "message": "Initialize excludes here if it\u0027s null",
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2703162c_17b9df8b",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1078567
+      },
+      "writtenOn": "2019-10-03T11:42:29Z",
+      "side": 1,
+      "message": "I decided to solve the problem with a different solution.\nSee my comment above.",
+      "parentUuid": "d3c80eb7_294c9a6c",
       "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
