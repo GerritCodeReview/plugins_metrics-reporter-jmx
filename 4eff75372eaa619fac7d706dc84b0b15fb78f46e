@@ -49,6 +49,70 @@
     },
     {
       "key": {
+        "uuid": "79e7e416_44554b34",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2019-10-03T10:45:45Z",
+      "side": 1,
+      "message": "Line 47 is in the constructor, so it\u0027s OK for it to be final here as long as it gets initialized in the constructor.\n\nIt looks like there is the chance it doesn\u0027t get initialized, i.e. if an exception is thrown.  In that case it would be better to initialize it to the empty set.",
+      "parentUuid": "fdf1a7c7_0e18cdf0",
+      "range": {
+        "startLine": 37,
+        "startChar": 2,
+        "endLine": 37,
+        "endChar": 9
+      },
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52b364f9_eba4f912",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2019-10-03T10:45:45Z",
+      "side": 1,
+      "message": "remove this per the below comments.",
+      "range": {
+        "startLine": 37,
+        "startChar": 30,
+        "endLine": 37,
+        "endChar": 49
+      },
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d3c80eb7_294c9a6c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2019-10-03T10:45:45Z",
+      "side": 1,
+      "message": "Initialize excludes here if it\u0027s null",
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "32d01c6e_dfca3e9b",
         "filename": "src/main/resources/Documentation/config.md",
         "patchSetId": 2
