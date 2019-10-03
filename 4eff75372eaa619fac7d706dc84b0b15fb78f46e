@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "374dca2e_9484b0d3",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/Configuration.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2019-10-03T09:42:45Z",
+      "side": 1,
+      "message": "private final",
+      "range": {
+        "startLine": 37,
+        "startChar": 2,
+        "endLine": 37,
+        "endChar": 9
+      },
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "32d01c6e_dfca3e9b",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2019-10-03T09:42:45Z",
+      "side": 1,
+      "message": "What instances are referred to here, and why must it be installed on all of them?\n\nDo we have this caveat for the other metrics plugins?",
+      "range": {
+        "startLine": 4,
+        "startChar": 38,
+        "endLine": 4,
+        "endChar": 58
+      },
+      "revId": "4eff75372eaa619fac7d706dc84b0b15fb78f46e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
