@@ -11,10 +11,9 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
 package com.googlesource.gerrit.plugins.metricsreporters;
 
-import com.codahale.metrics.Metric;
-import com.codahale.metrics.MetricFilter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.jmx.JmxReporter;
 import com.google.gerrit.extensions.annotations.Listen;
@@ -29,25 +28,10 @@ public class GerritJmxReporter implements LifecycleListener {
 
   @Inject
   public GerritJmxReporter(MetricRegistry registry, Configuration config) {
-
-    /* Copy the registry to avoid filtering the global one */
-    MetricRegistry filteredRegistry = new MetricRegistry();
-    filteredRegistry.registerAll(registry);
-
-    config
-        .getExcludes()
-        .forEach(
-            exclude -> {
-              filteredRegistry.removeMatching(
-                  new MetricFilter() {
-                    @Override
-                    public boolean matches(String name, Metric metric) {
-                      return name.matches(exclude);
-                    }
-                  });
-            });
-
-    this.reporter = JmxReporter.forRegistry(filteredRegistry).build();
+    FilteredMetricRegistry filtered =
+        new FilteredMetricRegistry(
+            registry, s -> config.getExcludes().stream().anyMatch(e -> s.matches(e)));
+    this.reporter = JmxReporter.forRegistry(filtered).build();
   }
 
   @Override
