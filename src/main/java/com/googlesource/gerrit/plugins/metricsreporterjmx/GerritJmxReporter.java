@@ -14,14 +14,13 @@
 
 package com.googlesource.gerrit.plugins.metricsreporterjmx;
 
-import com.codahale.metrics.Metric;
-import com.codahale.metrics.MetricFilter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.jmx.JmxReporter;
 import com.google.gerrit.extensions.annotations.Listen;
 import com.google.gerrit.extensions.events.LifecycleListener;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
+import java.util.function.Predicate;
 
 @Listen
 @Singleton
@@ -30,25 +29,10 @@ public class GerritJmxReporter implements LifecycleListener {
 
   @Inject
   public GerritJmxReporter(MetricRegistry registry, Configuration config) {
-
-    /* Copy the registry to avoid filtering the global one */
-    MetricRegistry filteredRegistry = new MetricRegistry();
-    filteredRegistry.registerAll(registry);
-
-    config
-        .getExcludes()
-        .forEach(
-            exclude -> {
-              filteredRegistry.removeMatching(
-                  new MetricFilter() {
-                    @Override
-                    public boolean matches(String name, Metric metric) {
-                      return name.matches(exclude);
-                    }
-                  });
-            });
-
-    this.reporter = JmxReporter.forRegistry(filteredRegistry).build();
+    Predicate<String> exclusionFilter =
+        s -> config.getExcludes().stream().anyMatch(e -> s.matches(e));
+    this.reporter =
+        JmxReporter.forRegistry(registry).filter((n, m) -> !exclusionFilter.test(n)).build();
   }
 
   @Override
