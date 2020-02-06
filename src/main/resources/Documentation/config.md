@@ -15,5 +15,5 @@ File '@PLUGIN@.config'
 ```
 
 ```metrics.exclude```
-:   String used to exclude metrics from the report. It can be specified multiple times.
-    Parsed as regular expression. Note, ^ and $ are automatically added around the string.
+:   Regex pattern used to exclude metrics from the report. It can be specified multiple times.
+    Note that pattern matching is done on the whole metric name, not only on a part of it.
