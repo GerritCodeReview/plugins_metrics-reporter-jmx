@@ -22,6 +22,30 @@
       "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0efac524_9325caae",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/GerritJmxReporter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2020-02-07T15:59:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a665034b_1d0a1880",
+      "range": {
+        "startLine": 34,
+        "startChar": 32,
+        "endLine": 34,
+        "endChar": 53
+      },
+      "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
