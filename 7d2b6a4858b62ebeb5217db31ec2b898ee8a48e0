@@ -22,6 +22,30 @@
       "revId": "7d2b6a4858b62ebeb5217db31ec2b898ee8a48e0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83c3cae6_8eb08b3c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporterjmx/Configuration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2020-02-07T16:02:47Z",
+      "side": 1,
+      "message": "Let\u0027s discuss that in the prometheus plugin where I already answered:\n\nhttps://gerrit-review.googlesource.com/c/plugins/metrics-reporter-prometheus/+/253637/1/src/main/java/com/googlesource/gerrit/plugins/metricsreporterprometheus/CapabilityChecker.java#14",
+      "parentUuid": "543fcb03_96379973",
+      "range": {
+        "startLine": 14,
+        "startChar": 40,
+        "endLine": 14,
+        "endChar": 58
+      },
+      "revId": "7d2b6a4858b62ebeb5217db31ec2b898ee8a48e0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
