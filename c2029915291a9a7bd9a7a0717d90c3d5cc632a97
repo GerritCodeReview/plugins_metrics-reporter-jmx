@@ -46,6 +46,30 @@
       "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5137fbf8_65a1fb63",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/GerritJmxReporter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1078567
+      },
+      "writtenOn": "2020-02-11T16:51:06Z",
+      "side": 1,
+      "message": "Copying the registry was added to avoid filtering the Gerrit core metrics registry. Modifying the core registry can cause the following issues:\n- Excluded metrics are not available in the registry anymore. Eg.: other plugins cannot access the filtered metrics (Note, we want to exclude the metrics _only_ in case of this single plugin)\n- Excluded metrics cannot be restored by modifying the plugin configuration and reloading the plugin. Ideally, the exclusion pattern can be modified by reloading the plugin but core metrics will not get restored only when Gerrit is restarted.\n\nPlease verify that these issues cannot happen with your implementation.",
+      "parentUuid": "0efac524_9325caae",
+      "range": {
+        "startLine": 34,
+        "startChar": 32,
+        "endLine": 34,
+        "endChar": 53
+      },
+      "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
