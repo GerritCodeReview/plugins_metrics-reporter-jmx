@@ -70,6 +70,30 @@
       "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e7f28d15_7a652ad8",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/GerritJmxReporter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2020-02-11T17:47:39Z",
+      "side": 1,
+      "message": "If I understand the code here correctly, it doesn\u0027t modify the core MetricRegistry in\nany way.\n\nWhat this code does is: create an instance of JmxReporter (plugin specific)\nwhich operates on the given FilteredMetricRegistry (plugins specific) which\nitself filters the results returned from the MetricRegistry from Gerrit core.\nThe FilteredMetricRegistry neither mutates the MetricRegistry from Gerrit core\nnor replaces it.\n\nFurther, when the plugin gets reloaded a new instance of FilteredMetricRegistry\nis created based on the (new) configuration.\n\nWhich piece of code here do you believe would modify the core MetricRegistry instance?",
+      "parentUuid": "5137fbf8_65a1fb63",
+      "range": {
+        "startLine": 34,
+        "startChar": 32,
+        "endLine": 34,
+        "endChar": 53
+      },
+      "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
