@@ -166,6 +166,30 @@
       "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a9715d6_0bb718a1",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporters/GerritJmxReporter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2020-02-11T22:29:18Z",
+      "side": 1,
+      "message": "The problem with metrics disappearing on plugin reload and re-appearing\nagain on the follow-up plugin reload is actually caused by the combination\nof how plugin re-loading machinery works in Gerrit core AND the fact\nthat JmxReporter.stop() (which is called from this.stop() method) actually\nremoves all MBeans from the MBeanServer. What plugin re-loading does is:\n1 load a new instance of this plugin\n2 do atomic switch from the old plugin instance to the new plugin instance\n3 stop the old plugin instance (this calls also JmxReporter.stop())\n\nNow, step 1 will register MBeans from the MetricRegistry (filtered based\non the exclusion rules)... *but* step 3 will unregister MBeans and we\nsee no metrics.\n\nAnother ugly thing is that due to this long known bug in Gerrit core [1]\nplugins start() and stop() methods are actually called twice... which may\nadditionally blur the issue.\n\nAnyway, I believe that there is nothing really wrong with this change.\nWe can work on automatic plugin configuration reloading and thus avoid\nthe need to reload the plugin itself when the configuration change.\nHowever, these are really low-prio issues as exclusion rules typically\ndo not change once configured.\n\n[1] https://bugs.chromium.org/p/gerrit/issues/detail?id\u003d2106",
+      "parentUuid": "5ade449f_8c137209",
+      "range": {
+        "startLine": 34,
+        "startChar": 32,
+        "endLine": 34,
+        "endChar": 53
+      },
+      "revId": "c2029915291a9a7bd9a7a0717d90c3d5cc632a97",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
