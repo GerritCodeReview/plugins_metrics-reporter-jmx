@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f323441c_af31c421",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/metricsreporterjmx/GerritJmxReporter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2020-02-11T18:25:04Z",
+      "side": 1,
+      "message": "Btw, we should discuss the PS-2 not PS-1.\nNotice that here we too pass a lambda expression which should be used every time\nwhen we get something from the given registry in order to filter the results.",
+      "revId": "d1513c6d942aad62d6af2f326b85904b259e4ec3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}
