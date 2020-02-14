@@ -5,6 +5,7 @@ gerrit_plugin(
     srcs = glob(["src/main/java/**/*.java"]),
     manifest_entries = [
         "Gerrit-PluginName: metrics-reporter-jmx",
+        "Gerrit-Module: com.googlesource.gerrit.plugins.metricsreporterjmx.Module",
     ],
     resources = glob(["src/main/resources/**/*"]),
     deps = ["@metrics_jmx//jar"],
