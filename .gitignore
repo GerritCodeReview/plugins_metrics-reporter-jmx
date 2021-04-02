@@ -1,0 +1,8 @@
+/.apt_generated
+/.classpath
+/.idea
+/.primary_build_tool
+/.project
+/.settings
+/bazel-*
+/eclipse-out/
