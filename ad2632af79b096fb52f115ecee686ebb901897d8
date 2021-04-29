@@ -18,6 +18,23 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf0a562d_a8a904af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2021-04-29T13:38:57Z",
+      "side": 1,
+      "message": "Thank you for the review Thomas. It took me a bit of time to come back since I have been on a break for the last 3 weeks.\n\nNote that I have merely copied material from the javamelody plugin and I otherwide do not have any knowledge about bazlets :-\\  It at least compiles properly for me locally.",
+      "revId": "ad2632af79b096fb52f115ecee686ebb901897d8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "10ce9c67_809e442a",
@@ -31,6 +48,30 @@
       "writtenOn": "2021-04-06T06:06:01Z",
       "side": 1,
       "message": "This version of the bazlets is quite old (8 months). We should directly use the current applicable version. It might be good to create stable-branches for this purpose to be able to use the right version for the used Gerrit version. However, here we should use the latest bazlet commit on master.",
+      "range": {
+        "startLine": 6,
+        "startChar": 14,
+        "endLine": 6,
+        "endChar": 54
+      },
+      "revId": "ad2632af79b096fb52f115ecee686ebb901897d8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c863317a_5cec77cc",
+        "filename": "WORKSPACE",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2021-04-29T13:38:57Z",
+      "side": 1,
+      "message": "Done, I have updated the commit to point to the current master of https://gerrit.googlesource.com/bazlets",
+      "parentUuid": "10ce9c67_809e442a",
       "range": {
         "startLine": 6,
         "startChar": 14,
@@ -64,6 +105,30 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c04eb6e4_1f4332c6",
+        "filename": "tools/eclipse/project.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2021-04-29T13:38:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d94dd3eb_3b0a5c13",
+      "range": {
+        "startLine": 2,
+        "startChar": 16,
+        "endLine": 2,
+        "endChar": 20
+      },
+      "revId": "ad2632af79b096fb52f115ecee686ebb901897d8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "90507014_5d10e9e1",
@@ -77,6 +142,30 @@
       "writtenOn": "2021-04-06T06:06:01Z",
       "side": 1,
       "message": "This file is missing:\n\n\u003e ╰─ tools/eclipse/project.sh\nWARNING: Waiting for server process to terminate (waited 5 seconds, waiting at most 60)\nWARNING: Waiting for server process to terminate (waited 10 seconds, waiting at most 60)\n.......................\n____Loading package: @com_googlesource_gerrit_bazlets//tools/eclipse\n____Downloading https://github.com/bazelbuild/rules_python/archive/9d68f24659e8ce8b736590ba1e4418af06ec2552.tar.gz via codeload.github.com: 1,512,830 bytes\nERROR: /private/var/tmp/_bazel_d073103/157bb314dd3279efce2323e5c9e50e85/external/rules_python/python/private/reexports.bzl:39:19: name \u0027PyInfo\u0027 is not defined.\nERROR: error loading package \u0027@com_googlesource_gerrit_bazlets//tools/eclipse\u0027: Extension \u0027python/private/reexports.bzl\u0027 has errors.\ntools/eclipse/project.sh: line 15: project.py: command not found",
+      "range": {
+        "startLine": 15,
+        "startChar": 106,
+        "endLine": 15,
+        "endChar": 116
+      },
+      "revId": "ad2632af79b096fb52f115ecee686ebb901897d8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d71834c3_fe2350b4",
+        "filename": "tools/eclipse/project.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2021-04-29T13:38:57Z",
+      "side": 1,
+      "message": "That seems to work for me?  The file is definitely present in my local bazel cache:\n\n $ bazel query @com_googlesource_gerrit_bazlets//tools/eclipse:project --output location | sed s/BUILD:.*//\n /home/hashar/.cache/bazel/_bazel_hashar/986ed2da289a7904151d2d41f03a6b89/external/com_googlesource_gerrit_bazlets/tools/eclipse/\n \n $ ls /home/hashar/.cache/bazel/_bazel_hashar/986ed2da289a7904151d2d41f03a6b89/external/com_googlesource_gerrit_bazlets/tools/eclipse/\n BUILD project.py\n\n\nMaybe it requires the plugin to be build once to get the com_googlesource_gerrit_bazlets to be fetched?",
+      "parentUuid": "90507014_5d10e9e1",
       "range": {
         "startLine": 15,
         "startChar": 106,
