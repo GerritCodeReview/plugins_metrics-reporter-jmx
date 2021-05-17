@@ -198,6 +198,30 @@
       },
       "revId": "ad2632af79b096fb52f115ecee686ebb901897d8",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a8be91a_bfb2bb0a",
+        "filename": "tools/eclipse/project.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1065256
+      },
+      "writtenOn": "2021-05-17T07:12:04Z",
+      "side": 1,
+      "message": "Found the reason for the issue. I am using bazelisk to manage bazel versions, thus my main bazel executable was outdated.\nThe script should be adapted to use bazelisk or bazel dependent on availability. This is also done in other places in Gerrit core. However, this is also not yet done for other plugins and can be done in a separate change.",
+      "parentUuid": "d71834c3_fe2350b4",
+      "range": {
+        "startLine": 15,
+        "startChar": 106,
+        "endLine": 15,
+        "endChar": 116
+      },
+      "revId": "ad2632af79b096fb52f115ecee686ebb901897d8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }
