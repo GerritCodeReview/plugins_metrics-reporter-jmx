@@ -1,13 +1,9 @@
 {
   "checks": {
     "zuul-check:plugins_metrics-reporter-jmx": {
-      "state": "FAILED",
-      "message": "Change failed",
-      "url": "https://ci.gerritcodereview.com/t/gerrit/buildset/0129795ad5964079b128071bc168b345",
-      "started": "2025-07-16T04:45:56Z",
-      "finished": "2025-07-16T04:52:55Z",
+      "state": "NOT_STARTED",
       "created": "2025-07-16T04:45:56Z",
-      "updated": "2025-07-16T04:52:55Z"
+      "updated": "2025-07-16T15:37:00Z"
     }
   }
 }
