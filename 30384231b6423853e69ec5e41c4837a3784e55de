@@ -16,6 +16,24 @@
       "message": "Works in my test setup.",
       "revId": "30384231b6423853e69ec5e41c4837a3784e55de",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "207973ac_3200c816",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4258806
+      },
+      "writtenOn": "2025-08-05T16:02:25Z",
+      "side": 1,
+      "message": "https://gerrit-review.googlesource.com/c/plugins/metrics-reporter-jmx/+/487878/comments/4eddb202_002b57c0",
+      "parentUuid": "4eddb202_002b57c0",
+      "revId": "30384231b6423853e69ec5e41c4837a3784e55de",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ],
   "submitRequirementResults": [
