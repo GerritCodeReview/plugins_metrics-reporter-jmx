@@ -1,12 +1,12 @@
 {
   "checks": {
     "zuul-check:plugins_metrics-reporter-jmx": {
-      "state": "SCHEDULED",
-      "message": "Change has been enqueued in check",
+      "state": "RUNNING",
+      "message": "Jobs have started running",
       "url": "https://ci.gerritcodereview.com/t/gerrit/status/change/571823,1",
       "started": "2026-04-10T12:36:25Z",
       "created": "2026-04-10T12:36:26Z",
-      "updated": "2026-04-10T12:36:26Z"
+      "updated": "2026-04-10T12:36:30Z"
     }
   }
 }
