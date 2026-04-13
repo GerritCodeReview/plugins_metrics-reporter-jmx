@@ -26,6 +26,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "92701458_e49147fb",
+        "filename": ".bazelrc",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2026-04-13T06:56:19Z",
+      "side": 1,
+      "message": "This can be removed now, because we have migrated to Bazel 8.6.0 already, and on Bazel 8 bzlmod enabled pr default.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "c71786fa7378166e73193dd1d5693c56c80959af",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0650d743_3a2a0d77",
         "filename": ".bazelrc",
         "patchSetId": 1
@@ -37,6 +60,30 @@
       "writtenOn": "2026-04-13T06:52:04Z",
       "side": 1,
       "message": "Nit: Update to Java 25.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 46
+      },
+      "revId": "c71786fa7378166e73193dd1d5693c56c80959af",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "806e43c2_afd4a562",
+        "filename": ".bazelrc",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2026-04-13T06:56:19Z",
+      "side": 1,
+      "message": "Java 25 doesn\u0027t work out of the box: change it to Java 21?",
+      "parentUuid": "0650d743_3a2a0d77",
       "range": {
         "startLine": 4,
         "startChar": 0,
